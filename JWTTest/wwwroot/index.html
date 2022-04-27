@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.26.1/dist/axios.min.js"></script>
+    <script>
+        onload = function () {
+            axios.get('https://localhost:44381/api/Auth',
+                {
+                    headers: {
+                        Authorization: 'Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic3RyaW5nIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTAyODMzMjl9.0nzAV35MzPEvBq1IyATpNLKYQpDbxK2_vaoyEyuBDKXJdWqRXGBEvqgkawLDRW0Yi9r1rIvuCV7ABqHH9DOVmA'
+                    },
+                    withCredentials: true
+                }).then(response => {
+                    console.log(response);
+                })
+        }
+    </script>
+</head>
+<body>
+    测试测试
+</body>
+</html>
